@@ -1,0 +1,73 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+html, body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.expense-tracker{
+    text-align:center;
+    margin-top:100px;
+}
+.expense-tracker .container{
+    width:992px;
+    margin:auto;
+}
+.expense-tracker h1{
+    font-size:60px;
+    font-weight:400;
+    padding:10px;
+}
+.expense-tracker .add-item{
+    margin-bottom:50px;
+}
+.expense-tracker .add-item h2{
+    color:rgb(34, 224, 34);
+    text-transform:capitalize;
+    font-size:30px;
+    padding:10px;
+    font-weight:500;
+}
+.expense-tracker .add-item > div:not(:first-of-type) {
+    display:inline-block;
+    padding:30px;
+}
+.expense-tracker .add-item > div.date,
+.expense-tracker .add-item > div.amount{
+    width:49%;
+}
+.expense-tracker .add-item > div input{
+    width:80%;
+    height:35px;
+    outline-color:rgb(34, 224, 34);
+    caret-color:rgb(34, 224, 34);
+}
+.expense-tracker .add-item .name{width:100%;}
+.expense-tracker .add-item #name{width:90%;}
+.expense-tracker .add-item label{width:10%;}
+.expense-tracker .add-item input[type="button"]{
+    background-color:rgb(34, 224, 34);
+    color:#fff;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size: 20px;
+}
+.expense-tracker .added-items table{
+    width:100%;
+}
+.expense-tracker .added-items table th:not(:last-of-type){
+    width:calc(90%/3);
+}
+.expense-tracker .added-items table th:last-of-type{
+    /* display:none; */
+    width:10%;
+}
+.expense-tracker .added-items table, th,td{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+.expense-tracker .added-items table tr input[type="button"]{
+    width:80%;
+}
